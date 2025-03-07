@@ -43,6 +43,11 @@ namespace ValidUml.Logic.UmlParsers
 				.ToArray();
 		}
 
+		public XmlNode[] AllEntities()
+		{
+			return Elements.ToArray();
+		}
+
 		public XmlNode GetById(string id)
 		{
 			return Elements.FirstOrDefault(c => c.AttributeValue(Xid) == id)
