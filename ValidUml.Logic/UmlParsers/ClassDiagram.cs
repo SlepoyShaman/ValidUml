@@ -7,12 +7,10 @@ namespace ValidUml.Logic.UmlParsers
 	public class ClassDiagram
 	{
 		private readonly XmlNode _umlModel;
-		public ClassDiagram()
+		public ClassDiagram(string xml)
 		{
-			var fileName = "D:\\diplom\\test.xml";
-			using var fs = File.OpenRead(fileName);
 			var xmlDocument = new XmlDocument();
-			xmlDocument.Load(fs);
+			xmlDocument.LoadXml(xml);
 			var root = xmlDocument.DocumentElement ?? throw new Exception("пустой рут");
 			_umlModel = root.GetChildNode("xmi:Extension");
 		}

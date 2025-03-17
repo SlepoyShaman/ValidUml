@@ -5,7 +5,7 @@
 		EntityType EntityType,
 		FilterType FilterType,
 		string FilterValue,
-		EntityRule[] Rules);
+		EntityRule[] Rules) : IUserRule;
 
 	public record EntityRule(
 		EntityRuleType RuleType,

@@ -1,4 +1,4 @@
-﻿namespace ValidUml.Logic.Models.UsersRules
+﻿namespace ValidUml.Logic.Models
 {
 	public interface IUserRule
 	{
