@@ -18,7 +18,7 @@ namespace ValidUml.Logic.UmlValidators
 		{
 			var errors = new List<string>();
 			var entities = Filter(rule);
-			var validators = rule.Rules.Select(r => GetValidator(r));
+			var validators = rule.Rules.Select(GetValidator);
 			foreach (var entity in entities)
 			{
 				var fails = validators.Select(v => v.Validate(entity))
@@ -42,6 +42,8 @@ namespace ValidUml.Logic.UmlValidators
 			return rule.FilterType switch
 			{
 				FilterType.Name => NameFilter.Execute(entities, rule.FilterValue),
+				FilterType.Implementing => ImplementingFilter.Execute(entities, rule.FilterValue, _diagram),
+				FilterType.ChildsOf => ImplementingFilter.Execute(entities, rule.FilterValue, _diagram),
 				_ => throw new Exception("Неизвестный тип фильтрации")
 			};
 		}

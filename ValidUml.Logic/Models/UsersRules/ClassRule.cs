@@ -21,6 +21,8 @@
 	public enum FilterType
 	{
 		Name,
+		Implementing,
+		ChildsOf
 	}
 
 	public enum EntityRuleType
