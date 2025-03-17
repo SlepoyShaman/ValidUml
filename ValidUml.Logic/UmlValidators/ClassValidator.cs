@@ -56,6 +56,7 @@ namespace ValidUml.Logic.UmlValidators
 				EntityRuleType.ContainsMethods => new ContainsMethodsValidator(rule.RuleValue),
 				EntityRuleType.NotContainsProperties => new NotContainsPropertiesValidator(rule.RuleValue),
 				EntityRuleType.NotContainsMethods => new NotContainsMethodsValidator(rule.RuleValue),
+				EntityRuleType.HasName => new NameValidator(rule.RuleValue),
 				_ => throw new Exception("Неизвестный тип валидации")
 			};
 		}

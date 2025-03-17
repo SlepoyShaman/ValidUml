@@ -31,6 +31,7 @@
 		NotContainsProperties,
 		ContainsMethods,
 		NotContainsMethods,
+		HasName
 	}
 
 
