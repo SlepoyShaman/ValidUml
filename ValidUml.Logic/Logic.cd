@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ValidUml.Logic.UmlExtensions.ClassDiagramNodeExtensions">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlExtensions\ClassDiagramNodeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlExtensions.UmlNodeExtensions">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAEABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlExtensions\UmlNodeExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlParsers.ClassDiagram">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAEAAAAIAEAAAAQAAAAAAAIAAAQAABACAAAAIA=</HashCode>
+      <FileName>UmlParsers\ClassDiagram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.Filters.ChildsOfFilter">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\Filters\ChildsOfFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.Filters.ImplementingFilter">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\Filters\ImplementingFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.Filters.NameFilter">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\Filters\NameFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.RuleValidators.ContainsPropertiesValidator" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\ContainsValidators.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.RuleValidators.ContainsMethodsValidator" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\ContainsValidators.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.RuleValidators.NotContainsPropertiesValidator" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\ContainsValidators.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.RuleValidators.NotContainsMethodsValidator" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\ContainsValidators.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.RuleValidators.NameValidator" BaseTypeListCollapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\NameValidator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ValidUml.Logic.UmlValidators.ClassValidator">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\ClassValidator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_diagram" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ValidUml.Logic.ValidationService">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ValidationService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ValidUml.Logic.UmlValidators.RuleValidators.IRuleValidator">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UmlValidators\RuleValidators\IRuleValidator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
