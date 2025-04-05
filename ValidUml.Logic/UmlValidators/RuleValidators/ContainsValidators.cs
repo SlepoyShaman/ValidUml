@@ -55,7 +55,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 			if (node.GetFields().Any(f => !regex.IsMatch(f.Name)))
 				return null;
 
-			return $"{node.AttributeValue(Xname)} содержит аттрибута {_name}";
+			return $"{node.AttributeValue(Xname)} содержит аттрибут {_name}";
 		}
 	}
 
@@ -73,7 +73,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 			if (node.GetMethods().Any(f => !regex.IsMatch(f.Name)))
 				return null;
 
-			return $"{node.AttributeValue(Xname)} содержит метода {_name}";
+			return $"{node.AttributeValue(Xname)} содержит метод {_name}";
 		}
 	}
 }

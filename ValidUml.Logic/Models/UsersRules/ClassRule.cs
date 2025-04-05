@@ -31,7 +31,9 @@
 		NotContainsProperties,
 		ContainsMethods,
 		NotContainsMethods,
-		HasName
+		HasName,
+		Implements,
+		ChildOf
 	}
 
 

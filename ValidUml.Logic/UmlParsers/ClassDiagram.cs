@@ -10,7 +10,9 @@ namespace ValidUml.Logic.UmlParsers
 		public ClassDiagram(string xml)
 		{
 			var xmlDocument = new XmlDocument();
-			xmlDocument.LoadXml(xml);
+			// xmlDocument.LoadXml(xml);
+			using var fs = File.OpenRead(xml);
+			xmlDocument.Load(fs);
 			var root = xmlDocument.DocumentElement ?? throw new Exception("пустой рут");
 			_umlModel = root.GetChildNode("xmi:Extension");
 		}
