@@ -2,7 +2,7 @@
 
 namespace ValidUml.Logic.UmlValidators.RuleValidators
 {
-	internal interface IRuleValidator
+	public interface IRuleValidator
 	{
 		public string? Validate(XmlNode node);
 	}

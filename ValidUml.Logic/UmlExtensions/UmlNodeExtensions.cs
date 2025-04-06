@@ -2,7 +2,7 @@
 
 namespace ValidUml.Logic.UmlExtensions
 {
-	internal static class UmlNodeExtensions
+	public static class UmlNodeExtensions
 	{
 		public static XmlNode GetChildNode(this XmlNode node, string name)
 		{

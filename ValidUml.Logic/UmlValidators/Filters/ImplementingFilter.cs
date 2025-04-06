@@ -6,7 +6,7 @@ using static ValidUml.Logic.UmlParsers.XmiUmlNames;
 
 namespace ValidUml.Logic.UmlValidators.Filters
 {
-	internal static class ImplementingFilter
+	public static class ImplementingFilter
 	{
 		public static IEnumerable<XmlNode> Execute(XmlNode[] data, string filterValue, ClassDiagram diagram)
 		{

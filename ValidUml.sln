@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.Service", "ValidUm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.Logic", "ValidUml.Logic\ValidUml.Logic.csproj", "{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.InUse.Tests", "ValidUml.InUse.Tests\ValidUml.InUse.Tests.csproj", "{9C08B407-4C97-4DBA-8727-851D3D18DEB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C08B407-4C97-4DBA-8727-851D3D18DEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C08B407-4C97-4DBA-8727-851D3D18DEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C08B407-4C97-4DBA-8727-851D3D18DEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C08B407-4C97-4DBA-8727-851D3D18DEB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

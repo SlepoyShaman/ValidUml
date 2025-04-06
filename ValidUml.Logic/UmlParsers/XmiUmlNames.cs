@@ -1,6 +1,6 @@
 ﻿namespace ValidUml.Logic.UmlParsers
 {
-	internal static class XmiUmlNames
+	public static class XmiUmlNames
 	{
 		public const string Xtype = "xmi:type";
 		public const string Xname = "name";

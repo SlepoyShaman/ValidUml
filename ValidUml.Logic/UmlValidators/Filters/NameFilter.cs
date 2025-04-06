@@ -5,7 +5,7 @@ using static ValidUml.Logic.UmlParsers.XmiUmlNames;
 
 namespace ValidUml.Logic.UmlValidators.Filters
 {
-	internal static class NameFilter
+	public static class NameFilter
 	{
 		public static IEnumerable<XmlNode> Execute(XmlNode[] data, string filterValue)
 		{

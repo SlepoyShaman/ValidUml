@@ -7,7 +7,7 @@ using static ValidUml.Logic.UmlParsers.XmiUmlNames;
 
 namespace ValidUml.Logic.UmlValidators.RuleValidators
 {
-	internal class ImplementsValidator : IRuleValidator
+	public class ImplementsValidator : IRuleValidator
 	{
 		private readonly string _name;
 		private readonly ClassDiagram _diagram;
@@ -31,7 +31,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 		}
 	}
 
-	internal class ChildsOfValidator : IRuleValidator
+	public class ChildsOfValidator : IRuleValidator
 	{
 		private readonly string _name;
 		private readonly ClassDiagram _diagram;

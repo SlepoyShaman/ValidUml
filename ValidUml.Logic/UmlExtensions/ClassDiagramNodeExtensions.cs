@@ -3,7 +3,7 @@ using ValidUml.Logic.Models.ClassDiagram;
 
 namespace ValidUml.Logic.UmlExtensions
 {
-	internal static class ClassDiagramNodeExtensions
+	public static class ClassDiagramNodeExtensions
 	{
 		public static Field[] GetFields(this XmlNode node)
 		{

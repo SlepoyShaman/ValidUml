@@ -5,7 +5,7 @@ using static ValidUml.Logic.UmlParsers.XmiUmlNames;
 
 namespace ValidUml.Logic.UmlValidators.RuleValidators
 {
-	internal class ContainsPropertiesValidator : IRuleValidator
+	public class ContainsPropertiesValidator : IRuleValidator
 	{
 		private readonly string _name;
 		public ContainsPropertiesValidator(string name)
@@ -23,7 +23,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 		}
 	}
 
-	internal class ContainsMethodsValidator : IRuleValidator
+	public class ContainsMethodsValidator : IRuleValidator
 	{
 		private readonly string _name;
 		public ContainsMethodsValidator(string name)
@@ -41,7 +41,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 		}
 	}
 
-	internal class NotContainsPropertiesValidator : IRuleValidator
+	public class NotContainsPropertiesValidator : IRuleValidator
 	{
 		private readonly string _name;
 		public NotContainsPropertiesValidator(string name)
@@ -59,7 +59,7 @@ namespace ValidUml.Logic.UmlValidators.RuleValidators
 		}
 	}
 
-	internal class NotContainsMethodsValidator : IRuleValidator
+	public class NotContainsMethodsValidator : IRuleValidator
 	{
 		private readonly string _name;
 		public NotContainsMethodsValidator(string name)
