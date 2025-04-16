@@ -10,6 +10,8 @@
 		public const string Xend = "end";
 		public const string Ximplementation = "Realisation";
 		public const string Xgeneralization = "Generalization";
+		public const string Xaggregation = "Aggregation";
+		public const string Xsequence = "Sequence";
 		public const string Xscope = "scope";
 		public const string XumlType = "type";
 	}
