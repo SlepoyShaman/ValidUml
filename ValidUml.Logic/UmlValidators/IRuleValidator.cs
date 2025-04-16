@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 
-namespace ValidUml.Logic.UmlValidators.RuleValidators
+namespace ValidUml.Logic.UmlValidators
 {
 	public interface IRuleValidator
 	{
