@@ -15,15 +15,28 @@ namespace ValidUml.Logic.UmlValidators.SequenceRuleValidators
 
 		public string? Validate(XmlNode node)
 		{
-			var next = _diagram.GetNextInSequens(node);
-			var linesTo = next.Length;
-			var linesBack = next.DistinctBy(n => n.AttributeValue(Xid))
-				.SelectMany(_diagram.GetPastInSequens)
-				.Where(n => n.AttributeValue(Xid) == node.AttributeValue(Xid))
-				.Count();
+			var errorMessage = $"У {node.AttributeValue(Xname)} количество вызовов не соответствует количеству ответов";
+			var links = node.GetChildNode(Xlinks)
+				.Childs()
+				.Where(l => l.Name == Xsequence);
 
-			if (linesTo == linesBack) return null;
-			return $"У {node.AttributeValue(Xname)} количество вызовов не соответствует количеству ответов";
+			var linksTo = links.Where(l => l.AttributeValue(Xstart) == node.AttributeValue(Xid))
+				.GroupBy(l => l.AttributeValue(Xend))
+				.ToDictionary(g => g.Key, g => g.Count());
+
+			var linksFrom = links.Where(l => l.AttributeValue(Xend) == node.AttributeValue(Xid))
+				.GroupBy(l => l.AttributeValue(Xstart))
+				.ToDictionary(g => g.Key, g => g.Count());
+
+			foreach (var pair in linksTo)
+			{
+				if (!linksFrom.TryGetValue(pair.Key, out var count))
+					return errorMessage;
+
+				if (count != pair.Value) return errorMessage;
+			}
+
+			return null;
 		}
 	}
 }

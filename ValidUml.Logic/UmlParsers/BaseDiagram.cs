@@ -29,17 +29,17 @@ namespace ValidUml.Logic.UmlParsers
 				?? throw new KeyNotFoundException($"Не найдена нода с id {id}");
 		}
 
-		protected List<XmlNode> GetLinkedChilds(XmlNode node, string linkType)
+		protected virtual List<XmlNode> GetLinkedChilds(XmlNode node, string linkType)
 		{
 			return GetLinked(node, linkType, Xstart);
 		}
 
-		protected List<XmlNode> GetLinkedParents(XmlNode node, string linkType)
+		protected virtual List<XmlNode> GetLinkedParents(XmlNode node, string linkType)
 		{
 			return GetLinked(node, linkType, Xend);
 		}
 
-		private List<XmlNode> GetLinked(XmlNode node, string linkType, string linkPlace)
+		protected List<XmlNode> GetLinked(XmlNode node, string linkType, string linkPlace)
 		{
 			var result = new List<XmlNode>();
 			var links = node.GetChildNode(Xlinks)

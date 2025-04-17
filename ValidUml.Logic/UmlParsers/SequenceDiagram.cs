@@ -35,5 +35,15 @@ namespace ValidUml.Logic.UmlParsers
 		{
 			return [.. GetLinkedParents(node, Xsequence)];
 		}
+
+		protected override List<XmlNode> GetLinkedChilds(XmlNode node, string linkType)
+		{
+			return GetLinked(node, linkType, Xend);
+		}
+
+		protected override List<XmlNode> GetLinkedParents(XmlNode node, string linkType)
+		{
+			return GetLinked(node, linkType, Xstart);
+		}
 	}
 }
