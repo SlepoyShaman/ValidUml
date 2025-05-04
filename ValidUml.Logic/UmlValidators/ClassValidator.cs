@@ -6,7 +6,7 @@ using ValidUml.Logic.UmlValidators.RuleValidators;
 
 namespace ValidUml.Logic.UmlValidators
 {
-	internal class ClassValidator
+	public class ClassValidator
 	{
 		private readonly ClassDiagram _diagram;
 		public ClassValidator(ClassDiagram diagram)

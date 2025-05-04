@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ValidUml.Logic\ValidUml.Logic.csproj" />
+    <ProjectReference Include="..\ValidUml.Logic\ValidUml.csproj" />
   </ItemGroup>
 
   <ItemGroup>

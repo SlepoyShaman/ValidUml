@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.Service", "ValidUml.Service\ValidUml.Service.csproj", "{8E449364-7918-416F-8959-53C4AA30D152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.Logic", "ValidUml.Logic\ValidUml.Logic.csproj", "{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml", "ValidUml.Logic\ValidUml.csproj", "{2B50DB68-590C-41C7-B0CE-08AD0F4F8481}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUml.InUse.Tests", "ValidUml.InUse.Tests\ValidUml.InUse.Tests.csproj", "{9C08B407-4C97-4DBA-8727-851D3D18DEB7}"
 EndProject
